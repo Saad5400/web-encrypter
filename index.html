@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.html.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Website</h1>
+      <form>
+        <label for="short-input">
+            Key
+            <a class="small" onclick="copyInput('short-input')">Copy</a>
+        </label>
+        <input type="text" id="short-input" name="short-input" maxlength="10">
+        <label for="textarea1">
+            Encrypted
+            <a class="small" onclick="copyInput('textarea1')">Copy</a>
+        </label>
+        <textarea id="textarea1" name="textarea1" rows="5"></textarea>
+        <label for="textarea2">
+            Decrypted
+            <a class="small" onclick="copyInput('textarea2')">Copy</a>
+        </label>
+        <textarea id="textarea2" name="textarea2" rows="5"></textarea>
+      </form>
+    </div>
+
+    <script src="index.html.js"></script>
+  </body>
+</html>
