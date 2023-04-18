@@ -15,16 +15,16 @@
             <a class="small" onclick="copyInput('short-input')">Copy</a>
         </label>
         <input type="text" id="short-input" name="short-input" maxlength="10">
+        <label for="textarea2">
+            Text
+        </label>
+        <textarea id="textarea2" name="textarea2" rows="5"></textarea>
         <label for="textarea1">
             Encrypted
             <a class="small" onclick="copyInput('textarea1')">Copy</a>
+            <a class="small" onclick="pasteInput('textarea1')">Paste</a>
         </label>
-        <textarea id="textarea1" name="textarea1" rows="5"></textarea>
-        <label for="textarea2">
-            Decrypted
-            <a class="small" onclick="copyInput('textarea2')">Copy</a>
-        </label>
-        <textarea id="textarea2" name="textarea2" rows="5"></textarea>
+        <textarea id="textarea1" name="textarea1" rows="1"></textarea>
       </form>
     </div>
 
