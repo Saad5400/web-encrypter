@@ -13,21 +13,24 @@
         <label for="short-input">
             Key
             <a class="small" onclick="copyInput('short-input')">Copy</a>
+            <a class="small" onclick="setRandomKey()">Random</a>
         </label>
-        <input type="text" id="short-input" name="short-input" maxlength="10">
+        <input type="text" id="short-input" name="short-input">
         <label for="textarea2">
             Text
         </label>
-        <textarea id="textarea2" name="textarea2" rows="5"></textarea>
+        <textarea id="textarea2" name="textarea2" rows="6"></textarea>
         <label for="textarea1">
             Encrypted
             <a class="small" onclick="copyInput('textarea1')">Copy</a>
             <a class="small" onclick="pasteInput('textarea1')">Paste</a>
         </label>
-        <textarea id="textarea1" name="textarea1" rows="1"></textarea>
+        <textarea id="textarea1" name="textarea1" rows="3"></textarea>
       </form>
     </div>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js">
+    </script>
     <script src="index.html.js"></script>
   </body>
 </html>
