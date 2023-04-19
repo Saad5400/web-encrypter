@@ -198,8 +198,6 @@ function setRandomKey() {
 if (localStorage.getItem('key')) {
     // set the value of the key in local storage to input
     input.value = localStorage.getItem('key');
-    // paste to textarea1
-    pasteInput('textarea1');
 }
 else {
     // set random key
