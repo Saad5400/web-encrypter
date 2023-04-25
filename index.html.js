@@ -115,11 +115,12 @@ function encrypt(text) {
       }
     }
     // convert encrypted to base64
-    encrypted = btoa(encrypted);
+    encrypted = Base64.encode(encrypted);
     return encrypted;
 }
 
 function decrypt(text) {
+    text = Base64.decode(text);
     let decrypted = "";
     let info = getInfo();
     const chars = info.chars;
@@ -135,8 +136,6 @@ function decrypt(text) {
             decrypted += chars[ ind ];
         }
     }
-    // convert decrypted from base64
-    decrypted = atob(decrypted);
     return decrypted;
 }
 
