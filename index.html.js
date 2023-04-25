@@ -114,6 +114,8 @@ function encrypt(text) {
         encrypted += chars[(charIndex + key) % chars.length];
       }
     }
+    // convert encrypted to base64
+    encrypted = btoa(encrypted);
     return encrypted;
 }
 
@@ -130,7 +132,9 @@ function decrypt(text) {
         } else {
             decrypted += chars[((charIndex - key) % chars.length) + chars.length];
         }
-      }
+    }
+    // convert decrypted from base64
+    decrypted = atob(decrypted);
     return decrypted;
 }
 
