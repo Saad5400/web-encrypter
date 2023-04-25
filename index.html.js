@@ -130,7 +130,9 @@ function decrypt(text) {
         if (charIndex === -1) {
             decrypted += text[i];
         } else {
-            decrypted += chars[((charIndex - key) % chars.length) + chars.length];
+            let ind = ((charIndex - key) % chars.length);
+            if (ind < 0) { ind += chars.length; }
+            decrypted += chars[ ind ];
         }
     }
     // convert decrypted from base64
