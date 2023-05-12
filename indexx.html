@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heart Explosion</title>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-color: #f0f0f0;
+		}
+
+		.heart {
+			position: absolute;
+			font-size: 2rem;
+			animation: fly 1s linear forwards;
+			opacity: 0;
+		}
+
+		@keyframes fly {
+			0% {
+				transform: scale(1);
+				opacity: 1;
+			}
+
+			100% {
+				transform: translateY(-200px) scale(0);
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		function getRandom(min, max) {
+			return Math.random() * (max - min) + min;
+		}
+
+		function explode() {
+			for (let i = 0; i < 20; i++) {
+				const heart = document.createElement('div');
+				heart.classList.add('heart');
+				heart.innerHTML = '❤️';
+				heart.style.left = `${getRandom(-50, 50)}px`;
+				heart.style.top = `${getRandom(-50, 50)}px`;
+				heart.style.animationDelay = `${getRandom(0, 0.5)}s`;
+				heart.style.animationDuration = `${getRandom(0.5, 1)}s`;
+				document.body.appendChild(heart);
+
+				setTimeout(() => {
+					heart.remove();
+				}, 1000);
+			}
+		}
+
+		document.body.addEventListener('click', explode);
+	</script>
+</body>
+
+</html>
