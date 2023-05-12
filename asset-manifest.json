@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/web-encrypter/static/css/main.cfa32876.css",
-    "main.js": "/web-encrypter/static/js/main.4db4ccd1.js",
+    "main.css": "/web-encrypter/static/css/main.06a4b4c7.css",
+    "main.js": "/web-encrypter/static/js/main.84d01578.js",
     "static/js/787.633816a4.chunk.js": "/web-encrypter/static/js/787.633816a4.chunk.js",
     "static/media/logo.svg": "/web-encrypter/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/web-encrypter/index.html",
-    "main.cfa32876.css.map": "/web-encrypter/static/css/main.cfa32876.css.map",
-    "main.4db4ccd1.js.map": "/web-encrypter/static/js/main.4db4ccd1.js.map",
+    "main.06a4b4c7.css.map": "/web-encrypter/static/css/main.06a4b4c7.css.map",
+    "main.84d01578.js.map": "/web-encrypter/static/js/main.84d01578.js.map",
     "787.633816a4.chunk.js.map": "/web-encrypter/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfa32876.css",
-    "static/js/main.4db4ccd1.js"
+    "static/css/main.06a4b4c7.css",
+    "static/js/main.84d01578.js"
   ]
 }
