@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/web-encrypter/static/css/main.85f9ed5f.css",
-    "main.js": "/web-encrypter/static/js/main.b9c2617e.js",
+    "main.js": "/web-encrypter/static/js/main.790bbaec.js",
     "static/js/787.633816a4.chunk.js": "/web-encrypter/static/js/787.633816a4.chunk.js",
     "static/media/logo.svg": "/web-encrypter/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/web-encrypter/index.html",
     "main.85f9ed5f.css.map": "/web-encrypter/static/css/main.85f9ed5f.css.map",
-    "main.b9c2617e.js.map": "/web-encrypter/static/js/main.b9c2617e.js.map",
+    "main.790bbaec.js.map": "/web-encrypter/static/js/main.790bbaec.js.map",
     "787.633816a4.chunk.js.map": "/web-encrypter/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85f9ed5f.css",
-    "static/js/main.b9c2617e.js"
+    "static/js/main.790bbaec.js"
   ]
 }
